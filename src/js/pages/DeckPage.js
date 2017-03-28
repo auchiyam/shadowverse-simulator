@@ -19,16 +19,18 @@ export default class DeckPage extends Component {
 
   render() {
 
+    if (this.state.class == -1) {
+
+    }
+
     return (
-      <div>
-        <Split flex={'right'}>
-          <DeckList />
-          <Box>
-            <Filter />
-            <CardList />
-          </Box>
-        </Split>
-      </div>
+      <Split flex={'right'}>
+        <DeckList />
+        <Box full={'vertical'} justify={'center'}>
+          <Filter />
+          <CardList />
+        </Box>
+      </Split>
     );
   }
 }

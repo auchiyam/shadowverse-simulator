@@ -34,7 +34,7 @@ export default class BasicApp extends Component {
     }
 
     return (
-      <App>
+      <App style={{maxWidth: "none"}}>
         {page}
       </App>
     );
