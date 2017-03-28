@@ -23,11 +23,13 @@ export default class DeckList extends Component {
               <Heading tag={'h2'} style={{paddingTop: '5px'}}>Deck Name</Heading>
             </Box>
             <Box full={'horizontal'} justify={'end'} align={'end'}>
-              <DeckLogo />
+              <DeckLogo color={'#FFFFFF'} />
             </Box>
           </Title>
         </Header>
+
         <ClassPortrait />
+
         <Stats />
         <DeckCards />
         <Footer>

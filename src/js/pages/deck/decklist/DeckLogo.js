@@ -2,14 +2,20 @@ import React, { Component } from 'react'
 import SVGIcon from 'grommet/components/SVGIcon';
 
 export default class DeckLogo extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+
+    const { color } = this.props
 
     return (
       <SVGIcon viewBox='0 0 80 100' style={{float: 'left'}}
         version='1.1'
         type='logo'>
         <g
-          stroke='#FFFFFF'
+          stroke={color}
           strokeWidth='3'
           fill='none'
           strokeLinecap='round'

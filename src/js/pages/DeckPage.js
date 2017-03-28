@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import Split from 'grommet/components/Split'
 import Box from 'grommet/components/Box'
+import Animate from 'grommet/components/Animate'
 
 import DeckList from './deck/DeckList'
 import CardList from './deck/CardList'
@@ -25,7 +26,9 @@ export default class DeckPage extends Component {
 
     return (
       <Split flex={'right'}>
-        <DeckList />
+        <Animate enter={{animation: 'slide-right', duration:'500'}}>
+          <DeckList />
+        </Animate>
         <Box full={'vertical'} justify={'center'}>
           <Filter />
           <CardList />
