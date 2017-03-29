@@ -4,7 +4,7 @@ class DeckStore {
   @observable language = 'ja'
   @observable cardlist = []
 
-  addCard(id) {
+  @computable addCard(id) {
     var card = {
       cardID: id
     }

@@ -52,17 +52,19 @@ export default class Stats extends Component {
         <Box direction={'row'} justify={'center'}>
           {graph}
         </Box>
-        <Box align={'end'} justify={'center'} pad={'small'}>
-          <Label size={'small'}>{total.followers}</Label>
-          <Label size={'small'}>{total.spells}</Label>
-          <Label size={'small'}>{total.amulets}</Label>
-          <Label size={'small'}>{total.total}</Label>
-        </Box>
-        <Box justify={'center'}>
-          <Label size={'small'} uppercase={true}>| followers</Label>
-          <Label size={'small'} uppercase={true}>| spells</Label>
-          <Label size={'small'} uppercase={true}>| amulets</Label>
-          <Label size={'small'} uppercase={true}>| total</Label>
+        <Box direction={'row'} full={'horizontal'} justify={'end'} style={{paddingRight: '12px'}}>
+          <Box align={'end'} justify={'center'} style={{paddingRight: '12px'}}>
+            <Label size={'small'}>{total.followers}</Label>
+            <Label size={'small'}>{total.spells}</Label>
+            <Label size={'small'}>{total.amulets}</Label>
+            <Label size={'small'}>{total.total}</Label>
+          </Box>
+          <Box justify={'center'}>
+            <Label size={'small'} uppercase={true}>| followers</Label>
+            <Label size={'small'} uppercase={true}>| spells</Label>
+            <Label size={'small'} uppercase={true}>| amulets</Label>
+            <Label size={'small'} uppercase={true}>| total</Label>
+          </Box>
         </Box>
       </Box>
     );

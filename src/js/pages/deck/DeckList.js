@@ -16,7 +16,7 @@ import DeckLogo from './decklist/DeckLogo'
 export default class DeckList extends Component {
   render() {
     return (
-      <Sidebar size={'medium'} colorIndex={'neutral-1'}>
+      <Sidebar size={'large'} colorIndex={'neutral-1'}>
         <Header>
           <Title full={'horizontal'}>
             <Box>
@@ -27,13 +27,9 @@ export default class DeckList extends Component {
             </Box>
           </Title>
         </Header>
-
         <ClassPortrait />
-
         <Stats costCount={[3, 9, 5, 0, 3, 2, 1, 2, 1, 2, 3]} total={{followers: 20, spells: 10, amulets: 1, total: 31}}/>
-
         <DeckCards />
-
         <Footer>
         </Footer>
       </Sidebar>
