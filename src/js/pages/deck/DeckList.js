@@ -30,8 +30,10 @@ export default class DeckList extends Component {
 
         <ClassPortrait />
 
-        <Stats />
+        <Stats costCount={[3, 9, 5, 0, 3, 2, 1, 2, 1, 2, 3]} total={{followers: 20, spells: 10, amulets: 1, total: 31}}/>
+
         <DeckCards />
+
         <Footer>
         </Footer>
       </Sidebar>
