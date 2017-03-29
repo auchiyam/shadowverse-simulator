@@ -35,7 +35,8 @@ export default class DeckPage extends Component {
         <Animate enter={{animation: 'slide-right', duration:500}}>
           <DeckList />
         </Animate>
-        <Box full={'vertical'} justify={'center'}>
+        <Box>
+          
         </Box>
       </Split>
     );

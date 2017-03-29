@@ -20,20 +20,20 @@ export default class DeckList extends Component {
     let tempdeck = [
       {id: '101514010', amount: 2},
       {id: '101021010', amount: 3},
-      {id: '102021020', amount: 2},
+      {id: '102021020', amount: 3},
       {id: '100511010', amount: 2},
-      {id: '101511020', amount: 2},
+      {id: '101511020', amount: 3},
       {id: '103521030', amount: 2},
       {id: '103021040', amount: 2},
       {id: '102511060', amount: 2},
-      {id: '103511050', amount: 2},
+      {id: '103511050', amount: 3},
       {id: '101514030', amount: 2},
       {id: '101534020', amount: 2},
       {id: '103534010', amount: 2},
-      {id: '101534030', amount: 2},
-      {id: '103521040', amount: 2},
-      {id: '101531050', amount: 2},
-      {id: '103541010', amount: 2},
+      {id: '101534030', amount: 3},
+      {id: '103521040', amount: 3},
+      {id: '101531050', amount: 3},
+      {id: '103541010', amount: 3},
     ]
     return (
       <Sidebar size={'large'} colorIndex={'neutral-1'}>
