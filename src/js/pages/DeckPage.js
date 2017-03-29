@@ -8,6 +8,8 @@ import DeckList from './deck/DeckList'
 import CardList from './deck/CardList'
 import Filter from './deck/Filter'
 
+import CardNode from './deck/decklist/deckcards/CardNode'
+
 export default class DeckPage extends Component {
   constructor(props) {
     super(props);
@@ -19,6 +21,10 @@ export default class DeckPage extends Component {
   }
 
   render() {
+    /*
+    <Filter />
+    <CardList />
+    */
 
     if (this.state.class == -1) {
 
@@ -30,8 +36,6 @@ export default class DeckPage extends Component {
           <DeckList />
         </Animate>
         <Box full={'vertical'} justify={'center'}>
-          <Filter />
-          <CardList />
         </Box>
       </Split>
     );

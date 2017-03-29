@@ -12,13 +12,13 @@ export default class StatsBar extends Component {
     const { cost, count, max } = this.props
     let maxHeight = 200
     let height = maxHeight * ((count * 1.0) / max)
-    let width = 50
+    let width = 70
     let y = maxHeight - height
     let view = '0 0 ' + width.toString() + " " + maxHeight.toString()
     return (
       <Box justify={'center'} align={'center'}>
         <Label size={'small'}>{count}</Label>
-        <SVGIcon viewBox={view} size={'medium'} style={{width: '20px'}}>
+        <SVGIcon viewBox={view} size={'large'} style={{width: '37px'}}>
           <g stroke='none'
             fill='#FFFFFF'
           >
